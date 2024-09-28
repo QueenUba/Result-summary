@@ -50,6 +50,7 @@ body {
 }
 .Summary-card {
  padding: 1.5rem;  
+ font-weight: 500;
 
 }
 
@@ -66,19 +67,58 @@ body {
     font-weight: 500;
 }
 .Rmvv {
-    border: 2px solid rgb(243, 7, 7);
     display: flex; 
     justify-content: space-between;
+    margin-top:1rem ;
+    padding: .5rem; 
+    border-radius: .5rem;
+ /*   background-color:hsl(0, 100%, 67%) ;*/
+ font-weight: 700;
 }
+.Rmvv:nth-child(2){
+    background-color: hsla(0, 100%, 67%,0.2) ;
+}
+.Reaction{
+    color: hsla(0, 100%, 67%,1) ;
+}
+
 .Rmvv-img {
     display: flex;
-    
+    gap: .5rem;
+}
+
+button{
+    margin-top: 2rem;
+    width:100% ;
+    padding: .7rem;
+    border-radius: 3rem;
+    background-color:hsl(224, 30%, 27%) ;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.125rem;
+    border: none;
+}
+.Rmvv:nth-child(3){
+    background-color:hsla(39, 100%, 56%, 0.2) ;
+}
+.Memory{
+    color:  hsl(39, 100%, 56%);
 }
 
 
+.Rmvv:nth-child(4){
+    background-color: hsla(166,  100%, 37%,0.2);
+}
+.Verbal{
+    color: hsl(166,  100%, 37%);
+}
 
-
-
+.Rmvv:nth-child(5){
+    background-color: hsla(234, 85%, 45%,0.2) ;
+}
+ .Visual{
+    color: hsl(234, 85%, 45%);
+}
 
 
 
