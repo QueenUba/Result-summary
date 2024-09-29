@@ -1,132 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: "Hanken Grotesk", sans-serif;
-    font-size: 1.125rem;
-
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.125rem;
 }
-.Parent-container {
-    
-}
-
 .Result-card {
-    color: hsl(0, 0%, 100%);
-    border: 1px solid slategrey;
-    min-height: 44vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
- background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 60%);   
-    border-bottom-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-    padding: 3rem 0; 
-    gap: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  border: 1px solid slategrey;
+  min-height: 44vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    rgba(120, 87, 255, 1) 0%,
+    rgba(46, 43, 233, 1) 60%
+  );
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  padding: 3rem 0;
+  gap: 1.5rem;
 }
-
 .Comment {
-    text-align: center;
-    
+  text-align: center;
 }
 .Result {
-    color: hsl(0, 0%, 100%);
-    border-radius: 50%;
-    /* To center the itmes winthin a div apply these styles below */
-    display: flex;
-    flex-direction: column;
-    height: 8.75rem;
-    justify-content: center;
-    align-items: center;
-    /* To center a div horizontally */
-    width: 8.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    background: linear-gradient(180deg, rgba(78,33,202,1) 0%, rgba(36,33,202,0) 98%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  /* To center the itmes winthin a div apply these styles below */
+  display: flex;
+  flex-direction: column;
+  height: 8.75rem;
+  justify-content: center;
+  align-items: center;
+  /* To center a div horizontally */
+  width: 8.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(
+    180deg,
+    rgba(78, 33, 202, 1) 0%,
+    rgba(36, 33, 202, 0) 98%
+  );
 }
 .Summary-card {
- padding: 1.5rem;  
- font-weight: 500;
-
+  padding: 1.5rem;
+  font-weight: 500;
 }
-
 .Result h1 {
-    font-weight: 800;
+  font-weight: 800;
 }
 .Result p {
-    font-weight: 500;
+  font-weight: 500;
+  opacity: 0.5;
 }
 .Comment h3 {
-    font-weight: 700;
+  font-weight: 700;
 }
 .Comment p {
-    font-weight: 500;
+  font-weight: 500;
 }
 .Rmvv {
-    display: flex; 
-    justify-content: space-between;
-    margin-top:1rem ;
-    padding: .5rem; 
-    border-radius: .5rem;
- /*   background-color:hsl(0, 100%, 67%) ;*/
- font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  /*   background-color:hsl(0, 100%, 67%) ;*/
+  font-weight: 700;
 }
-.Rmvv:nth-child(2){
-    background-color: hsla(0, 100%, 67%,0.2) ;
+.Rmvv:nth-child(2) {
+  background-color: hsla(0, 100%, 67%, 0.2);
 }
-.Reaction{
-    color: hsla(0, 100%, 67%,1) ;
+.Reaction {
+  color: hsla(0, 100%, 67%, 1);
 }
-
 .Rmvv-img {
+  display: flex;
+  gap: 0.5rem;
+}
+button {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 3rem;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.125rem;
+  border: none;
+}
+.Rmvv:nth-child(3) {
+  background-color: hsla(39, 100%, 56%, 0.2);
+}
+.Memory {
+  color: hsl(39, 100%, 56%);
+}
+.Rmvv:nth-child(4) {
+  background-color: hsla(166, 100%, 37%, 0.2);
+}
+.Verbal {
+  color: hsl(166, 100%, 37%);
+}
+.Rmvv:nth-child(5) {
+  background-color: hsla(234, 85%, 45%, 0.2);
+}
+.Visual {
+  color: hsl(234, 85%, 45%);
+}
+/* styling for desktop screen starts here */
+@media screen and (min-width: 64rem) {
+  .Parent-container {
     display: flex;
-    gap: .5rem;
+    /* border: 2px solid red; */
+    width: 46.25rem;
+    /* height: 32.1875rem; */
+    margin-left: auto;
+    margin-right: auto;
+    height: 28rem;
+    box-shadow: 15px 11px 30px 4px rgba(235, 241, 255, 1);
+    -webkit-box-shadow: 15px 11px 30px 4px rgba(235, 241, 255, 1);
+    -moz-box-shadow: 15px 11px 30px 4px rgba(235, 241, 255, 1);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  .Result-card,
+  .Summary-card {
+    width: 50%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+  }
+  .Result-card {
+    border-radius: 2rem;
+  }
+  .Summary-card {
+   align-self: center; 
+   padding: 2rem;
+  }
+  .Rmvv span {
+    font-weight: 500;
+    color: hsl(224, 30%, 27%);
+  }
 }
 
-button{
-    margin-top: 2rem;
-    width:100% ;
-    padding: .7rem;
-    border-radius: 3rem;
-    background-color:hsl(224, 30%, 27%) ;
-    color: hsl(0, 0%, 100%);
-    font-weight: 700;
-    font-size: 1.125rem;
-    border: none;
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
-.Rmvv:nth-child(3){
-    background-color:hsla(39, 100%, 56%, 0.2) ;
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
-.Memory{
-    color:  hsl(39, 100%, 56%);
-}
-
-
-.Rmvv:nth-child(4){
-    background-color: hsla(166,  100%, 37%,0.2);
-}
-.Verbal{
-    color: hsl(166,  100%, 37%);
-}
-
-.Rmvv:nth-child(5){
-    background-color: hsla(234, 85%, 45%,0.2) ;
-}
- .Visual{
-    color: hsl(234, 85%, 45%);
-}
-
-
-
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
